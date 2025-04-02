@@ -3,32 +3,6 @@
         "sectionType": "HIGHLIGHTS",
         "tasks": [
             {
-                "id": "54fda152-9da6-455e-b668-14ec354638bb",
-                "kind": "INITIAL",
-                "type": "APPLICATION_LAUNCH",
-                "status": "STARTED",
-                "validationType": "DEFAULT",
-                "subType": "MINI_APP",
-                "isShared": false,
-                "sharingDescription": "",
-                "iconFileKey": "3214c45f-e686-40d9-8833-72fa45b47135/821d678d-97e2-4738-984a-aebe6b17c8d4",
-                "bannerFileKey": null,
-                "title": "Play Boinkers and receive 100 free wheel spins bonus!",
-                "productName": null,
-                "description": null,
-                "reward": {
-                    "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
-                    "name": "Blum points",
-                    "symbol": "BP",
-                    "value": "500"
-                },
-                "applicationLaunch": {
-                    "url": "https://t.me/boinker_bot/boinkapp?startapp=campBlumMar"
-                },
-                "isHidden": false,
-                "isDisclaimerRequired": false
-            },
-            {
                 "id": "27ad460a-71ec-4d1f-a7dc-f545eed6a924",
                 "kind": "QUEST",
                 "type": "PARTNER_INTEGRATION",
@@ -213,10 +187,36 @@
                 "isDisclaimerRequired": false
             },
             {
+                "id": "97ed3987-9a71-4657-817a-bd03753be163",
+                "kind": "INITIAL",
+                "type": "APPLICATION_LAUNCH",
+                "status": "STARTED",
+                "validationType": "DEFAULT",
+                "subType": "MINI_APP",
+                "isShared": false,
+                "sharingDescription": "",
+                "iconFileKey": "3214c45f-e686-40d9-8833-72fa45b47135/821d678d-97e2-4738-984a-aebe6b17c8d4",
+                "bannerFileKey": null,
+                "title": "Boinkers:\nSpin the slot to win the $TON raffle",
+                "productName": "Boinkers",
+                "description": null,
+                "reward": {
+                    "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
+                    "name": "Blum points",
+                    "symbol": "BP",
+                    "value": "500"
+                },
+                "applicationLaunch": {
+                    "url": "https://t.me/boinker_bot/boinkapp?startapp=campBlumFeb"
+                },
+                "isHidden": false,
+                "isDisclaimerRequired": false
+            },
+            {
                 "id": "b77fb803-3051-4db6-866a-94231c91350c",
                 "kind": "ROUTINE",
                 "type": "INTERNAL",
-                "status": "FINISHED",
+                "status": "READY_FOR_CLAIM",
                 "validationType": "DEFAULT",
                 "subType": "SHARE_STORIES",
                 "isShared": false,
@@ -492,6 +492,72 @@
                         "isDisclaimerRequired": false
                     },
                     {
+                        "id": "e86991fd-676e-4f87-be6e-ad2276127ced",
+                        "kind": "ROUTINE",
+                        "type": "SOCIAL_SUBSCRIPTION",
+                        "status": "FINISHED",
+                        "validationType": "DEFAULT",
+                        "subType": "TELEGRAM",
+                        "iconFileKey": "76d66c82-a1e3-4097-aaac-47abd2f6fe73/eb0b1c71-448a-4f80-bb6f-06d7950d60f4",
+                        "title": "Join Ladesov Crypto",
+                        "productName": null,
+                        "reward": {
+                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
+                            "name": "Blum points",
+                            "symbol": "BP",
+                            "value": "111"
+                        },
+                        "socialSubscription": {
+                            "openInTelegram": true,
+                            "url": "https://t.me/+OAVh0_i8fNg4NWFi"
+                        },
+                        "isDisclaimerRequired": false
+                    },
+                    {
+                        "id": "cf1c90c9-9ac2-4df5-af6e-bbf6fd6269fb",
+                        "kind": "ROUTINE",
+                        "type": "SOCIAL_SUBSCRIPTION",
+                        "status": "FINISHED",
+                        "validationType": "DEFAULT",
+                        "subType": "TELEGRAM",
+                        "iconFileKey": "664df3e2-ba2f-48b2-ac1f-8dbdeaa3b964/6f8b8468-827e-4194-8b98-5f07b61c0e39",
+                        "title": "Join Crypto Blog",
+                        "productName": null,
+                        "reward": {
+                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
+                            "name": "Blum points",
+                            "symbol": "BP",
+                            "value": "111"
+                        },
+                        "socialSubscription": {
+                            "openInTelegram": true,
+                            "url": "https://t.me/+KydD2cPa1aI5OGQy"
+                        },
+                        "isDisclaimerRequired": false
+                    },
+                    {
+                        "id": "34c6cf44-018a-4cde-999c-f98ec50e1670",
+                        "kind": "ROUTINE",
+                        "type": "SOCIAL_SUBSCRIPTION",
+                        "status": "FINISHED",
+                        "validationType": "DEFAULT",
+                        "subType": "TELEGRAM",
+                        "iconFileKey": "7e4f7a66-7852-4565-8dee-935b305f98bd/207d0bc4-e528-4a22-9154-1d0e602734d3",
+                        "title": "Join Crypta Skrudzha",
+                        "productName": null,
+                        "reward": {
+                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
+                            "name": "Blum points",
+                            "symbol": "BP",
+                            "value": "111"
+                        },
+                        "socialSubscription": {
+                            "openInTelegram": true,
+                            "url": "https://t.me/crypta"
+                        },
+                        "isDisclaimerRequired": false
+                    },
+                    {
                         "id": "bb12aa2a-bb28-446d-879f-107ade1b654c",
                         "kind": "ROUTINE",
                         "type": "SOCIAL_SUBSCRIPTION",
@@ -528,7 +594,7 @@
                 "title": "New",
                 "tasks": [
                     {
-                        "id": "9d9a6c2a-b0a4-4120-9563-ebfaa118ecb8",
+                        "id": "055b0d94-012f-4312-821a-d74e8803bbb2",
                         "kind": "INITIAL",
                         "type": "SOCIAL_SUBSCRIPTION",
                         "status": "READY_FOR_VERIFY",
@@ -538,7 +604,7 @@
                         "sharingDescription": "",
                         "iconFileKey": "d72d558b-ce90-4e80-8dd8-109a134fe36a/c11fe842-e014-4ae2-94d7-f93e2cfd3ed5",
                         "bannerFileKey": null,
-                        "title": "Limit Orders at Blum",
+                        "title": "Blum's TGE teaser ",
                         "productName": "",
                         "description": null,
                         "reward": {
@@ -549,61 +615,7 @@
                         },
                         "socialSubscription": {
                             "openInTelegram": false,
-                            "url": "https://youtu.be/peOzWY_oAlg"
-                        },
-                        "isHidden": false,
-                        "isDisclaimerRequired": false
-                    },
-                    {
-                        "id": "085ba6d5-7bd1-4186-b85a-4a991d1c9138",
-                        "kind": "INITIAL",
-                        "type": "SOCIAL_SUBSCRIPTION",
-                        "status": "FINISHED",
-                        "validationType": "DEFAULT",
-                        "subType": "TWITTER",
-                        "isShared": false,
-                        "sharingDescription": "",
-                        "iconFileKey": "b4bbdaaa-184e-4334-907a-b5b656fa2866/636cf638-5e1e-44b3-be7a-58bb09f33c5c",
-                        "bannerFileKey": null,
-                        "title": "Blum TGE - X Post",
-                        "productName": null,
-                        "description": null,
-                        "reward": {
-                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
-                            "name": "Blum points",
-                            "symbol": "BP",
-                            "value": "500"
-                        },
-                        "socialSubscription": {
-                            "openInTelegram": false,
-                            "url": "https://x.com/blumcrypto/status/1905666302305267772"
-                        },
-                        "isHidden": false,
-                        "isDisclaimerRequired": false
-                    },
-                    {
-                        "id": "b2e5b613-0bed-4d83-9bb5-0ba2c3f8e84e",
-                        "kind": "INITIAL",
-                        "type": "SOCIAL_SUBSCRIPTION",
-                        "status": "FINISHED",
-                        "validationType": "DEFAULT",
-                        "subType": "TELEGRAM",
-                        "isShared": false,
-                        "sharingDescription": "",
-                        "iconFileKey": "",
-                        "bannerFileKey": null,
-                        "title": "Blum TGE - Telegram Post",
-                        "productName": null,
-                        "description": null,
-                        "reward": {
-                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
-                            "name": "Blum points",
-                            "symbol": "BP",
-                            "value": "500"
-                        },
-                        "socialSubscription": {
-                            "openInTelegram": true,
-                            "url": "https://t.me/blumcrypto/806"
+                            "url": "https://youtu.be/cYPf7yaQ1LA"
                         },
                         "isHidden": false,
                         "isDisclaimerRequired": false
@@ -636,10 +648,69 @@
                         "isDisclaimerRequired": false
                     },
                     {
-                        "id": "055b0d94-012f-4312-821a-d74e8803bbb2",
+                        "id": "f44f5c5e-5d92-4b25-b241-5c2893c7077c",
                         "kind": "INITIAL",
                         "type": "SOCIAL_SUBSCRIPTION",
                         "status": "FINISHED",
+                        "validationType": "KEYWORD",
+                        "subType": "YOUTUBE",
+                        "isShared": false,
+                        "sharingDescription": "",
+                        "iconFileKey": "d72d558b-ce90-4e80-8dd8-109a134fe36a/c11fe842-e014-4ae2-94d7-f93e2cfd3ed5",
+                        "bannerFileKey": null,
+                        "title": "How to Work at Blum?",
+                        "productName": "",
+                        "description": null,
+                        "reward": {
+                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
+                            "name": "Blum points",
+                            "symbol": "BP",
+                            "value": "250"
+                        },
+                        "socialSubscription": {
+                            "openInTelegram": false,
+                            "url": "https://youtu.be/JqZJpl937Z0"
+                        },
+                        "isHidden": false,
+                        "isDisclaimerRequired": false
+                    },
+                    {
+                        "id": "46a820d6-668f-49c6-a8a1-6fd0d9d09e92",
+                        "kind": "INITIAL",
+                        "type": "SOCIAL_SUBSCRIPTION",
+                        "status": "FINISHED",
+                        "validationType": "DEFAULT",
+                        "subType": "TWITTER",
+                        "isShared": false,
+                        "sharingDescription": "",
+                        "iconFileKey": "b4bbdaaa-184e-4334-907a-b5b656fa2866/636cf638-5e1e-44b3-be7a-58bb09f33c5c",
+                        "bannerFileKey": null,
+                        "title": "New Trading Campaign Announcement",
+                        "productName": null,
+                        "description": null,
+                        "reward": {
+                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
+                            "name": "Blum points",
+                            "symbol": "BP",
+                            "value": "500"
+                        },
+                        "socialSubscription": {
+                            "openInTelegram": false,
+                            "url": "https://x.com/blumcrypto/status/1899860544531607931"
+                        },
+                        "isHidden": false,
+                        "isDisclaimerRequired": false
+                    }
+                ]
+            },
+            {
+                "title": "Socials",
+                "tasks": [
+                    {
+                        "id": "055b0d94-012f-4312-821a-d74e8803bbb2",
+                        "kind": "INITIAL",
+                        "type": "SOCIAL_SUBSCRIPTION",
+                        "status": "READY_FOR_VERIFY",
                         "validationType": "KEYWORD",
                         "subType": "YOUTUBE",
                         "isShared": false,
@@ -661,12 +732,30 @@
                         },
                         "isHidden": false,
                         "isDisclaimerRequired": false
-                    }
-                ]
-            },
-            {
-                "title": "Socials",
-                "tasks": [
+                    },
+                    {
+                        "id": "b77fb803-3051-4db6-866a-94231c91350c",
+                        "kind": "ROUTINE",
+                        "type": "INTERNAL",
+                        "status": "READY_FOR_CLAIM",
+                        "validationType": "DEFAULT",
+                        "subType": "SHARE_STORIES",
+                        "isShared": false,
+                        "sharingDescription": "",
+                        "iconFileKey": "6cc05c29-93dd-4599-ba8c-976472aa0783/88be42ab-6f82-403e-a1e2-557a0de8d1a0",
+                        "bannerFileKey": null,
+                        "title": "Share story",
+                        "productName": null,
+                        "description": null,
+                        "reward": {
+                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
+                            "name": "Blum points",
+                            "symbol": "BP",
+                            "value": "100"
+                        },
+                        "isHidden": false,
+                        "isDisclaimerRequired": false
+                    },
                     {
                         "id": "297794dc-552d-486f-bb90-4e13dce5ad24",
                         "kind": "INITIAL",
@@ -694,60 +783,6 @@
                         "isDisclaimerRequired": false
                     },
                     {
-                        "id": "085ba6d5-7bd1-4186-b85a-4a991d1c9138",
-                        "kind": "INITIAL",
-                        "type": "SOCIAL_SUBSCRIPTION",
-                        "status": "FINISHED",
-                        "validationType": "DEFAULT",
-                        "subType": "TWITTER",
-                        "isShared": false,
-                        "sharingDescription": "",
-                        "iconFileKey": "b4bbdaaa-184e-4334-907a-b5b656fa2866/636cf638-5e1e-44b3-be7a-58bb09f33c5c",
-                        "bannerFileKey": null,
-                        "title": "Blum TGE - X Post",
-                        "productName": null,
-                        "description": null,
-                        "reward": {
-                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
-                            "name": "Blum points",
-                            "symbol": "BP",
-                            "value": "500"
-                        },
-                        "socialSubscription": {
-                            "openInTelegram": false,
-                            "url": "https://x.com/blumcrypto/status/1905666302305267772"
-                        },
-                        "isHidden": false,
-                        "isDisclaimerRequired": false
-                    },
-                    {
-                        "id": "b2e5b613-0bed-4d83-9bb5-0ba2c3f8e84e",
-                        "kind": "INITIAL",
-                        "type": "SOCIAL_SUBSCRIPTION",
-                        "status": "FINISHED",
-                        "validationType": "DEFAULT",
-                        "subType": "TELEGRAM",
-                        "isShared": false,
-                        "sharingDescription": "",
-                        "iconFileKey": "",
-                        "bannerFileKey": null,
-                        "title": "Blum TGE - Telegram Post",
-                        "productName": null,
-                        "description": null,
-                        "reward": {
-                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
-                            "name": "Blum points",
-                            "symbol": "BP",
-                            "value": "500"
-                        },
-                        "socialSubscription": {
-                            "openInTelegram": true,
-                            "url": "https://t.me/blumcrypto/806"
-                        },
-                        "isHidden": false,
-                        "isDisclaimerRequired": false
-                    },
-                    {
                         "id": "055730f5-1d46-4621-9111-0c01c0787feb",
                         "kind": "INITIAL",
                         "type": "SOCIAL_SUBSCRIPTION",
@@ -770,33 +805,6 @@
                         "socialSubscription": {
                             "openInTelegram": false,
                             "url": "https://www.instagram.com/blum.live/"
-                        },
-                        "isHidden": false,
-                        "isDisclaimerRequired": false
-                    },
-                    {
-                        "id": "055b0d94-012f-4312-821a-d74e8803bbb2",
-                        "kind": "INITIAL",
-                        "type": "SOCIAL_SUBSCRIPTION",
-                        "status": "FINISHED",
-                        "validationType": "KEYWORD",
-                        "subType": "YOUTUBE",
-                        "isShared": false,
-                        "sharingDescription": "",
-                        "iconFileKey": "d72d558b-ce90-4e80-8dd8-109a134fe36a/c11fe842-e014-4ae2-94d7-f93e2cfd3ed5",
-                        "bannerFileKey": null,
-                        "title": "Blum's TGE teaser ",
-                        "productName": "",
-                        "description": null,
-                        "reward": {
-                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
-                            "name": "Blum points",
-                            "symbol": "BP",
-                            "value": "250"
-                        },
-                        "socialSubscription": {
-                            "openInTelegram": false,
-                            "url": "https://youtu.be/cYPf7yaQ1LA"
                         },
                         "isHidden": false,
                         "isDisclaimerRequired": false
@@ -905,29 +913,6 @@
                         "socialSubscription": {
                             "openInTelegram": false,
                             "url": "https://youtu.be/mdIAkZKwHzo"
-                        },
-                        "isHidden": false,
-                        "isDisclaimerRequired": false
-                    },
-                    {
-                        "id": "b77fb803-3051-4db6-866a-94231c91350c",
-                        "kind": "ROUTINE",
-                        "type": "INTERNAL",
-                        "status": "FINISHED",
-                        "validationType": "DEFAULT",
-                        "subType": "SHARE_STORIES",
-                        "isShared": false,
-                        "sharingDescription": "",
-                        "iconFileKey": "6cc05c29-93dd-4599-ba8c-976472aa0783/88be42ab-6f82-403e-a1e2-557a0de8d1a0",
-                        "bannerFileKey": null,
-                        "title": "Share story",
-                        "productName": null,
-                        "description": null,
-                        "reward": {
-                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
-                            "name": "Blum points",
-                            "symbol": "BP",
-                            "value": "100"
                         },
                         "isHidden": false,
                         "isDisclaimerRequired": false
@@ -1500,33 +1485,6 @@
                         "isDisclaimerRequired": false
                     },
                     {
-                        "id": "6e3931d0-83b3-47da-82de-198fbb1bcd1d",
-                        "kind": "INITIAL",
-                        "type": "SOCIAL_SUBSCRIPTION",
-                        "status": "FINISHED",
-                        "validationType": "DEFAULT",
-                        "subType": "TWITTER",
-                        "isShared": false,
-                        "sharingDescription": "",
-                        "iconFileKey": "13f2f4ae-8e2e-4eae-b5ee-ce7decc24cf3/7b0ff485-33e7-43ec-8213-1941110f9e5f",
-                        "bannerFileKey": null,
-                        "title": "Follow Blum’s VP of Design on X",
-                        "productName": null,
-                        "description": null,
-                        "reward": {
-                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
-                            "name": "Blum points",
-                            "symbol": "BP",
-                            "value": "90"
-                        },
-                        "socialSubscription": {
-                            "openInTelegram": false,
-                            "url": "https://x.com/0xgenie"
-                        },
-                        "isHidden": false,
-                        "isDisclaimerRequired": false
-                    },
-                    {
                         "id": "535567b1-7fd0-454d-9296-d73cb19fe9d7",
                         "kind": "INITIAL",
                         "type": "SOCIAL_SUBSCRIPTION",
@@ -1549,6 +1507,33 @@
                         "socialSubscription": {
                             "openInTelegram": false,
                             "url": "https://x.com/cryptosmerkis"
+                        },
+                        "isHidden": false,
+                        "isDisclaimerRequired": false
+                    },
+                    {
+                        "id": "6e3931d0-83b3-47da-82de-198fbb1bcd1d",
+                        "kind": "INITIAL",
+                        "type": "SOCIAL_SUBSCRIPTION",
+                        "status": "FINISHED",
+                        "validationType": "DEFAULT",
+                        "subType": "TWITTER",
+                        "isShared": false,
+                        "sharingDescription": "",
+                        "iconFileKey": "13f2f4ae-8e2e-4eae-b5ee-ce7decc24cf3/7b0ff485-33e7-43ec-8213-1941110f9e5f",
+                        "bannerFileKey": null,
+                        "title": "Follow Blum’s VP of Design on X",
+                        "productName": null,
+                        "description": null,
+                        "reward": {
+                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
+                            "name": "Blum points",
+                            "symbol": "BP",
+                            "value": "90"
+                        },
+                        "socialSubscription": {
+                            "openInTelegram": false,
+                            "url": "https://x.com/0xgenie"
                         },
                         "isHidden": false,
                         "isDisclaimerRequired": false
@@ -1670,33 +1655,6 @@
             {
                 "title": "Academy",
                 "tasks": [
-                    {
-                        "id": "9d9a6c2a-b0a4-4120-9563-ebfaa118ecb8",
-                        "kind": "INITIAL",
-                        "type": "SOCIAL_SUBSCRIPTION",
-                        "status": "READY_FOR_VERIFY",
-                        "validationType": "KEYWORD",
-                        "subType": "YOUTUBE",
-                        "isShared": false,
-                        "sharingDescription": "",
-                        "iconFileKey": "d72d558b-ce90-4e80-8dd8-109a134fe36a/c11fe842-e014-4ae2-94d7-f93e2cfd3ed5",
-                        "bannerFileKey": null,
-                        "title": "Limit Orders at Blum",
-                        "productName": "",
-                        "description": null,
-                        "reward": {
-                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
-                            "name": "Blum points",
-                            "symbol": "BP",
-                            "value": "250"
-                        },
-                        "socialSubscription": {
-                            "openInTelegram": false,
-                            "url": "https://youtu.be/peOzWY_oAlg"
-                        },
-                        "isHidden": false,
-                        "isDisclaimerRequired": false
-                    },
                     {
                         "id": "f5041a75-dd3b-4baf-b2e2-3ff5e894ec6d",
                         "kind": "INITIAL",
@@ -4539,7 +4497,7 @@
                 "title": "Frens",
                 "tasks": [
                     {
-                        "id": "f382ec3f-089d-46de-b921-b92adfd3327a",
+                        "id": "220ee7b1-cca4-4af8-838a-2001cb42b813",
                         "kind": "ONGOING",
                         "type": "PROGRESS_TARGET",
                         "status": "NOT_STARTED",
@@ -4556,11 +4514,11 @@
                             "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
                             "name": "Blum points",
                             "symbol": "BP",
-                            "value": "1000"
+                            "value": "200"
                         },
                         "progressTarget": {
-                            "target": "25",
-                            "progress": "10",
+                            "target": "10",
+                            "progress": "9",
                             "accuracy": 0,
                             "postfix": "frens"
                         },
@@ -4589,7 +4547,36 @@
                         },
                         "progressTarget": {
                             "target": "50",
-                            "progress": "10",
+                            "progress": "9",
+                            "accuracy": 0,
+                            "postfix": "frens"
+                        },
+                        "isHidden": false,
+                        "isDisclaimerRequired": false
+                    },
+                    {
+                        "id": "f382ec3f-089d-46de-b921-b92adfd3327a",
+                        "kind": "ONGOING",
+                        "type": "PROGRESS_TARGET",
+                        "status": "NOT_STARTED",
+                        "validationType": "DEFAULT",
+                        "subType": "REFERRAL",
+                        "isShared": false,
+                        "sharingDescription": "",
+                        "iconFileKey": "e2b28ca7-366f-4a34-8448-8badc5f31c62/a84a75fd-5016-4486-a9a2-6e3912e62d43",
+                        "bannerFileKey": null,
+                        "title": "Invite",
+                        "productName": null,
+                        "description": null,
+                        "reward": {
+                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
+                            "name": "Blum points",
+                            "symbol": "BP",
+                            "value": "1000"
+                        },
+                        "progressTarget": {
+                            "target": "25",
+                            "progress": "9",
                             "accuracy": 0,
                             "postfix": "frens"
                         },
@@ -4618,36 +4605,7 @@
                         },
                         "progressTarget": {
                             "target": "100",
-                            "progress": "10",
-                            "accuracy": 0,
-                            "postfix": "frens"
-                        },
-                        "isHidden": false,
-                        "isDisclaimerRequired": false
-                    },
-                    {
-                        "id": "220ee7b1-cca4-4af8-838a-2001cb42b813",
-                        "kind": "ONGOING",
-                        "type": "PROGRESS_TARGET",
-                        "status": "FINISHED",
-                        "validationType": "DEFAULT",
-                        "subType": "REFERRAL",
-                        "isShared": false,
-                        "sharingDescription": "",
-                        "iconFileKey": "e2b28ca7-366f-4a34-8448-8badc5f31c62/a84a75fd-5016-4486-a9a2-6e3912e62d43",
-                        "bannerFileKey": null,
-                        "title": "Invite",
-                        "productName": null,
-                        "description": null,
-                        "reward": {
-                            "currencyId": "59bee2e3-a682-4ec5-93df-a3bb294f7bed",
-                            "name": "Blum points",
-                            "symbol": "BP",
-                            "value": "200"
-                        },
-                        "progressTarget": {
-                            "target": "10",
-                            "progress": "10",
+                            "progress": "9",
                             "accuracy": 0,
                             "postfix": "frens"
                         },
@@ -4710,7 +4668,7 @@
                         },
                         "progressTarget": {
                             "target": "20000",
-                            "progress": "10512.000000000002",
+                            "progress": "9941.759999999998",
                             "accuracy": 0,
                             "postfix": "BP"
                         },
@@ -4739,7 +4697,7 @@
                         },
                         "progressTarget": {
                             "target": "25000",
-                            "progress": "10512.000000000002",
+                            "progress": "9941.759999999998",
                             "accuracy": 0,
                             "postfix": "BP"
                         },
@@ -4768,7 +4726,7 @@
                         },
                         "progressTarget": {
                             "target": "30000",
-                            "progress": "10512.000000000002",
+                            "progress": "9941.759999999998",
                             "accuracy": 0,
                             "postfix": "BP"
                         },
@@ -4797,7 +4755,7 @@
                         },
                         "progressTarget": {
                             "target": "35000",
-                            "progress": "10512.000000000002",
+                            "progress": "9941.759999999998",
                             "accuracy": 0,
                             "postfix": "BP"
                         },
@@ -4826,7 +4784,7 @@
                         },
                         "progressTarget": {
                             "target": "40000",
-                            "progress": "10512.000000000002",
+                            "progress": "9941.759999999998",
                             "accuracy": 0,
                             "postfix": "BP"
                         },
@@ -4855,7 +4813,7 @@
                         },
                         "progressTarget": {
                             "target": "45000",
-                            "progress": "10512.000000000002",
+                            "progress": "9941.759999999998",
                             "accuracy": 0,
                             "postfix": "BP"
                         },
@@ -4884,7 +4842,7 @@
                         },
                         "progressTarget": {
                             "target": "50000",
-                            "progress": "10512.000000000002",
+                            "progress": "9941.759999999998",
                             "accuracy": 0,
                             "postfix": "BP"
                         },
@@ -5058,7 +5016,7 @@
                         },
                         "progressTarget": {
                             "target": "10000",
-                            "progress": "10000",
+                            "progress": "9941.759999999998",
                             "accuracy": 0,
                             "postfix": "BP"
                         },
@@ -5087,7 +5045,7 @@
                         },
                         "progressTarget": {
                             "target": "15000",
-                            "progress": "10512.000000000002",
+                            "progress": "9941.759999999998",
                             "accuracy": 0,
                             "postfix": "BP"
                         },
