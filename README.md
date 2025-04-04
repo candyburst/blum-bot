@@ -38,12 +38,13 @@ Additionally, Blum Bot offers advanced features such as:
 
 ---
 
-## 🌟 Version v1.1.3
+## 🌟 Version v1.1.4
 
 ### Updates
 
-1. Fixed a bug where the script was not working on some devices.
-2. Added a new solver for the latest quest from Blum.
+1. Added leaderboard information.
+2. Optimized the farming system.
+3. Added an auto-join tribe system.
 
 ---
 

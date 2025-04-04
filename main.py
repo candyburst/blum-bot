@@ -300,6 +300,81 @@ class blum:
                 self.log(f"📄 Response content: {friends_response.text}", Fore.RED)
             except Exception:
                 pass
+            
+        # API 4: Mendapatkan leaderboard
+        leaderboard_url = f"{self.BASE_URL}leaderboard/my"
+        leaderboard_headers = {**self.HEADERS, "authorization": f"Bearer {self.token}"}
+        try:
+            self.log("📡 Sending leaderboard request...", Fore.CYAN)
+            leaderboard_response = requests.get(leaderboard_url, headers=leaderboard_headers)
+            leaderboard_response.raise_for_status()
+            leaderboard_data = self.decode_response(leaderboard_response)
+            
+            bp = leaderboard_data.get("BP", {})
+            mp = leaderboard_data.get("MP", {})
+            self.log("🏆 Leaderboard Info:", Fore.GREEN)
+            self.log(f"    - BP: Position {bp.get('position', 'N/A')}, Amount {bp.get('amount', 'N/A')}", Fore.CYAN)
+            self.log(f"    - MP: Position {mp.get('position', 'N/A')}, Amount {mp.get('amount', 'N/A')}", Fore.CYAN)
+        except requests.exceptions.RequestException as e:
+            self.log(f"❌ Failed to fetch leaderboard info: {e}", Fore.RED)
+            try:
+                self.log(f"📄 Response content: {leaderboard_response.text}", Fore.RED)
+            except Exception:
+                pass
+        except Exception as e:
+            self.log(f"❌ Unexpected error in leaderboard request: {e}", Fore.RED)
+            try:
+                self.log(f"📄 Response content: {leaderboard_response.text}", Fore.RED)
+            except Exception:
+                pass
+
+        # API 5: Mekanik Auto Join Tribe
+        tribe_headers = {**self.HEADERS, "authorization": f"Bearer {self.token}"}
+        tribe_my_url = "https://tribe-domain.blum.codes/api/v1/tribe/my"
+        already_in_target = False  # Flag untuk cek status tribe
+        try:
+            self.log("📡 Checking current tribe...", Fore.CYAN)
+            tribe_my_response = requests.get(tribe_my_url, headers=tribe_headers)
+            tribe_my_response.raise_for_status()
+            current_tribe = self.decode_response(tribe_my_response)
+            current_chatname = current_tribe.get("chatname", "")
+            if current_chatname == "livexordsblum":
+                self.log("ℹ️ Already in the target tribe.", Fore.GREEN)
+                already_in_target = True
+            else:
+                self.log("🔄 You are in a different tribe. Leaving current tribe...", Fore.YELLOW)
+                tribe_leave_url = "https://tribe-domain.blum.codes/api/v1/tribe/leave"
+                try:
+                    leave_response = requests.post(tribe_leave_url, headers=tribe_headers, json={})
+                    leave_response.raise_for_status()
+                    self.log("✅ Successfully left the current tribe.", Fore.GREEN)
+                except Exception as e:
+                    self.log(f"❌ Failed to leave current tribe: {e}", Fore.RED)
+                    return
+        except requests.exceptions.RequestException:
+            self.log("ℹ️ Not currently in any tribe.", Fore.YELLOW)
+        except Exception as e:
+            self.log(f"❌ Unexpected error when checking tribe: {e}", Fore.RED)
+        
+        # Jika belum berada di tribe target, maka join ke tribe target
+        if not already_in_target:
+            tribe_join_url = "https://tribe-domain.blum.codes/api/v1/tribe/by-chatname/livexordsblum"
+            try:
+                self.log("📡 Sending join tribe request...", Fore.CYAN)
+                join_response = requests.get(tribe_join_url, headers=tribe_headers)
+                join_response.raise_for_status()
+                join_data = self.decode_response(join_response)
+                self.log("✅ Successfully joined the tribe:", Fore.GREEN)
+                self.log(f"    - Tribe Title: {join_data.get('title', 'N/A')}", Fore.CYAN)
+                self.log(f"    - Chatname: {join_data.get('chatname', 'N/A')}", Fore.CYAN)
+            except requests.exceptions.RequestException as e:
+                self.log(f"❌ Failed to join tribe: {e}", Fore.RED)
+                try:
+                    self.log(f"📄 Response content: {join_response.text}", Fore.RED)
+                except Exception:
+                    pass
+            except Exception as e:
+                self.log(f"❌ Unexpected error when joining tribe: {e}", Fore.RED)
     
     def daily(self) -> None:
         self.log("🔄 Attempting to check daily reward...", Fore.GREEN)
@@ -628,7 +703,7 @@ class blum:
                 self.log("🚜 Starting farming session...", Fore.CYAN)
                 start_response = requests.post(start_url, headers=headers)
                 start_response.raise_for_status()
-                start_data = sself.decode_response(start_response)
+                start_data = self.decode_response(start_response)
                 self.log("✅ Farming session started:", Fore.GREEN)
                 self.log(f"    - Start Time: {start_data.get('startTime', 'N/A')}", Fore.CYAN)
                 self.log(f"    - End Time: {start_data.get('endTime', 'N/A')}", Fore.CYAN)
