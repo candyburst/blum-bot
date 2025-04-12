@@ -8,14 +8,14 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/livexords-nw/blum-bot/actions">
-<img src="https://img.shields.io/github/actions/workflow/status/livexords-nw/blum-bot/ci.yml?branch=main" alt="Build Status" />
+<a href="https://github.com/candyburst/blum-bot/actions">
+<img src="https://img.shields.io/github/actions/workflow/status/candyburst/blum-bot/ci.yml?branch=main" alt="Build Status" />
 </a>
-<a href="https://github.com/livexords-nw/blum-bot/releases">
-<img src="https://img.shields.io/github/v/release/livexords-nw/blum-bot" alt="Latest Release" />
+<a href="https://github.com/candyburst/blum-bot/releases">
+<img src="https://img.shields.io/github/v/release/candyburst/blum-bot" alt="Latest Release" />
 </a>
-<a href="https://github.com/livexords-nw/blum-bot/blob/main/LICENSE">
-<img src="https://img.shields.io/github/license/livexords-nw/blum-bot" alt="License" />
+<a href="https://github.com/candyburst/blum-bot/blob/main/LICENSE">
+<img src="https://img.shields.io/github/license/candyburst/blum-bot" alt="License" />
 </a>
 <a href="https://t.me/livexordsscript">
 <img src="https://img.shields.io/badge/Telegram-Join%20Group-2CA5E0?logo=telegram&style=flat" alt="Telegram Group" />
@@ -129,7 +129,7 @@ pip install -r requirements.txt
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/livexords-nw/blum-bot.git
+   git clone https://github.com/candyburst/blum-bot.git
    ```
 
 2. **Navigate to the Project Folder**
