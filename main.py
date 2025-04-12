@@ -873,7 +873,7 @@ class blum:
             # Define a function to claim the game using the stored game_id
             def claim_game():
                 try:
-                    points = random.randint(self.config.get("low_point", 260), self.config.get("high_point", 280))
+                    points = random.randint(self.config.get("low_point", 260), self.config.get("high_point", 280))*2
                     freeze = random.randint(1, 2)
                     payload = json.dumps({
                         "game_id": game_id,
