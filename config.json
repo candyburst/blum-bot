@@ -3,9 +3,9 @@
     "daily": true,
     "task": true,
     "farming": true,
-    "low_point": 260,
-    "high_point": 280,
-    "thread": 1,
+    "low_point": 175,
+    "high_point": 220,
+    "thread": 5,
     "proxy": false,
     "delay_account_switch": 10,
     "delay_loop": 3000
