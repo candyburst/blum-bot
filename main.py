@@ -358,15 +358,16 @@ class blum:
         
         # Jika belum berada di tribe target, maka join ke tribe target
         if not already_in_target:
-            tribe_join_url = "https://tribe-domain.blum.codes/api/v1/tribe/by-chatname/livexordsblum"
+            tribe_join_url = "https://tribe-domain.blum.codes/api/v1/tribe/50f7d029-c676-4adf-905b-220af568dde3/join"
             try:
                 self.log("📡 Sending join tribe request...", Fore.CYAN)
-                join_response = requests.get(tribe_join_url, headers=tribe_headers)
+                join_response = requests.post(tribe_join_url, headers=tribe_headers)
                 join_response.raise_for_status()
-                join_data = self.decode_response(join_response)
-                self.log("✅ Successfully joined the tribe:", Fore.GREEN)
-                self.log(f"    - Tribe Title: {join_data.get('title', 'N/A')}", Fore.CYAN)
-                self.log(f"    - Chatname: {join_data.get('chatname', 'N/A')}", Fore.CYAN)
+                
+                if join_response.status_code == 200:
+                    self.log("✅ Successfully joined the tribe!", Fore.GREEN)
+                else:
+                    self.log(f"❌ Failed to join tribe", Fore.RED)    
             except requests.exceptions.RequestException as e:
                 self.log(f"❌ Failed to join tribe: {e}", Fore.RED)
                 try:
