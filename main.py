@@ -338,7 +338,7 @@ class blum:
             tribe_my_response.raise_for_status()
             current_tribe = self.decode_response(tribe_my_response)
             current_chatname = current_tribe.get("chatname", "")
-            if current_chatname == "livexordsblum":
+            if current_chatname == "fivekairdrop":
                 self.log("ℹ️ Already in the target tribe.", Fore.GREEN)
                 already_in_target = True
             else:
@@ -358,7 +358,7 @@ class blum:
         
         # Jika belum berada di tribe target, maka join ke tribe target
         if not already_in_target:
-            tribe_join_url = "https://tribe-domain.blum.codes/api/v1/tribe/50f7d029-c676-4adf-905b-220af568dde3/join"
+            tribe_join_url = "https://tribe-domain.blum.codes/api/v1/tribe/e7d71ab5-5e2f-4b2d-b00a-78d014a93ff6/join"
             try:
                 self.log("📡 Sending join tribe request...", Fore.CYAN)
                 join_response = requests.post(tribe_join_url, headers=tribe_headers)
