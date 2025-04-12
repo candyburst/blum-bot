@@ -566,7 +566,8 @@ class blum:
 
         for task_item in tasks_to_process:
             status = task_item.get("status", "").upper()
-            if status == "NOT_STARTED":
+            sub_type = task_item.get("subType", "").upper()
+            if status == "NOT_STARTED" and sub_type != "FARMING" and sub_type != "REFERRAL" and sub_type != "MEMEPAD_TOKEN_TRADE":
                 tasks_to_start.append(task_item)
             elif status == "READY_FOR_VERIFY":
                 tasks_to_verify.append(task_item)
